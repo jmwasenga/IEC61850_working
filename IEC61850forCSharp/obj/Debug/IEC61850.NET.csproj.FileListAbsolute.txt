@@ -1,0 +1,6 @@
+/home/john/Projects/T7_bcu/T7_bcu/IEC61850forCSharp/bin/Debug/iec61850dotnet.dll
+/home/john/Projects/T7_bcu/T7_bcu/IEC61850forCSharp/bin/Debug/iec61850dotnet.pdb
+/home/john/Projects/T7_bcu/T7_bcu/IEC61850forCSharp/obj/Debug/IEC61850.NET.csprojAssemblyReference.cache
+/home/john/Projects/T7_bcu/T7_bcu/IEC61850forCSharp/obj/Debug/IEC61850.NET.csproj.CoreCompileInputs.cache
+/home/john/Projects/T7_bcu/T7_bcu/IEC61850forCSharp/obj/Debug/iec61850dotnet.dll
+/home/john/Projects/T7_bcu/T7_bcu/IEC61850forCSharp/obj/Debug/iec61850dotnet.pdb
