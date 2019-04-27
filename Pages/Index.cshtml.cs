@@ -18,10 +18,10 @@ namespace T7_bcu.Pages
             IndexModel viewdata = new IndexModel();
 			
 			MmsValue values = report.GetDataSetValues ();
-           
+			          
 			for (int i = 0; i < values.Size(); i++) {
 				if (report.GetReasonForInclusion(i) != ReasonForInclusion.REASON_NOT_INCLUDED) {
-					if (i == 0) viewdata.ViewData["VphaseA"] = values.GetElement(i);
+                    if (i == 0) viewdata.ViewData["VphaseA"] = values.GetElement(i);
                     if (i == 1) viewdata.ViewData["VphaseB"] = values.GetElement(i);
                     if (i == 2) viewdata.ViewData["VphaseC"] = values.GetElement(i);
                     if (i == 3) viewdata.ViewData["VphaseAB"] = values.GetElement(i);
@@ -37,7 +37,7 @@ namespace T7_bcu.Pages
                     if (i == 19) viewdata.ViewData["Freq"] = values.GetElement(i);
 
 
-                }
+               }
             }
             		           
 		}
@@ -46,10 +46,11 @@ namespace T7_bcu.Pages
 		private static bool running = true;
 
 
-      public static void OnGet()
+      public void OnGet()
       {
-      
-        IedConnection con = new IedConnection ();
+            IndexModel viewdata = new IndexModel();
+           
+            IedConnection con = new IedConnection ();
 
 			string hostname;
 
@@ -109,10 +110,6 @@ namespace T7_bcu.Pages
 			}
 
 		}
-
-        public static void Main(String [] args)
-        {
-            OnGet();
-        }
+       
     }
 }
